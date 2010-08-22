@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::JSAN::Shotenjin;
 BEGIN {
-  $Dist::Zilla::Plugin::JSAN::Shotenjin::VERSION = '0.01_01';
+  $Dist::Zilla::Plugin::JSAN::Shotenjin::VERSION = '0.01_02';
 }
 
 # ABSTRACT: Run the "Shotenjin.Joosed" helper script for the javascript files with templates
@@ -17,11 +17,7 @@ with 'Dist::Zilla::Role::FileMunger';
 
 
 has 'process_list' => (
-    is  => 'rw',
-    
-    default => sub { 
-        return [ { regex => m/^lib\b/, keep_whitespace => 0, cwd_as_base => 1 } ] 
-    },
+    is  => 'rw'
 );
 
 
@@ -68,7 +64,7 @@ sub BUILDARGS {
     return {
         zilla           => $zilla,
         plugin_name     => $plugin_name,
-        process_list    => \@params,
+        process_list    => @params > 0 ? \@params : [ { regex => qr/^lib\b/, keep_whitespace => 0, cwd_as_base => 1 } ],
     }
 }
 
@@ -89,7 +85,7 @@ Dist::Zilla::Plugin::JSAN::Shotenjin - Run the "Shotenjin.Joosed" helper script 
 
 =head1 VERSION
 
-version 0.01_01
+version 0.01_02
 
 =head1 SYNOPSIS
 
