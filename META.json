@@ -1,0 +1,48 @@
+{
+   "abstract" : "Run the \"Shotenjin.Joosed\" helper script for the javascript files with templates",
+   "author" : [
+      "Nickolay Platonov <nplatonov@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-Plugin-JSAN-Shotenjin",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla" : "4.101900",
+            "File::Find::Rule" : "0.28",
+            "Getopt::LL" : "1.00",
+            "Moose" : "1.00",
+            "Path::Class" : "0.16"
+         }
+      }
+   },
+   "release_status" : "testing",
+   "resources" : {
+      "homepage" : "http://github.com/SamuraiJack/Dist-Zilla-Plugin-JSAN-Shotenjin/tree",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/SamuraiJack/Dist-Zilla-Plugin-JSAN-Shotenjin.git",
+         "web" : "http://github.com/SamuraiJack/Dist-Zilla-Plugin-JSAN-Shotenjin/tree"
+      }
+   },
+   "version" : "0.01_01"
+}
+
