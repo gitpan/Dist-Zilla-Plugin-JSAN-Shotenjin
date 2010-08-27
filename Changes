@@ -1,5 +1,9 @@
 Release history for Dist::Zilla::Plugin::JSAN::Shotenjin
 
+0.01_03   2010-08-27 22:09
+
+        - fixed reference to not installed plugin
+
 0.01_02   2010-08-22 17:54
 
         - fixed default parameters

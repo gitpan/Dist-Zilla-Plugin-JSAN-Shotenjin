@@ -1,6 +1,6 @@
 package Shotenjin::Embedder;
 BEGIN {
-  $Shotenjin::Embedder::VERSION = '0.01_02';
+  $Shotenjin::Embedder::VERSION = '0.01_03';
 } 
 
 # ABSTRACT: embedd and escape template content
@@ -105,7 +105,7 @@ Shotenjin::Embedder - embedd and escape template content
 
 =head1 VERSION
 
-version 0.01_02
+version 0.01_03
 
 =head1 AUTHOR
 

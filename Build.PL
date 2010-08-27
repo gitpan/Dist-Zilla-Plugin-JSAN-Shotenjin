@@ -17,7 +17,7 @@ my %module_build_args = (
     'Nickolay Platonov <nplatonov@cpan.org>'
   ],
   'dist_name' => 'Dist-Zilla-Plugin-JSAN-Shotenjin',
-  'dist_version' => '0.01_02',
+  'dist_version' => '0.01_03',
   'license' => 'perl',
   'module_name' => 'Dist::Zilla::Plugin::JSAN::Shotenjin',
   'recommends' => {},

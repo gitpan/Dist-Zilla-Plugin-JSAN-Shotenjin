@@ -37,7 +37,7 @@ if ($param && -d $param) {
 
 package shotenjin_embed;
 BEGIN {
-  $shotenjin_embed::VERSION = '0.01_02';
+  $shotenjin_embed::VERSION = '0.01_03';
 } #just to satisfy PodWeaver
 
 1;
@@ -50,7 +50,7 @@ shotenjin_embed - embedd and escape template content
 
 =head1 VERSION
 
-version 0.01_02
+version 0.01_03
 
 =head1 AUTHOR
 
