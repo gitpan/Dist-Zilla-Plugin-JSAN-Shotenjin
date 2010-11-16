@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::JSAN::Shotenjin;
 BEGIN {
-  $Dist::Zilla::Plugin::JSAN::Shotenjin::VERSION = '0.01_03';
+  $Dist::Zilla::Plugin::JSAN::Shotenjin::VERSION = '0.01';
 }
 
 # ABSTRACT: Run the "Shotenjin.Joosed" helper script for the javascript files with templates
@@ -85,7 +85,7 @@ Dist::Zilla::Plugin::JSAN::Shotenjin - Run the "Shotenjin.Joosed" helper script 
 
 =head1 VERSION
 
-version 0.01_03
+version 0.01
 
 =head1 SYNOPSIS
 

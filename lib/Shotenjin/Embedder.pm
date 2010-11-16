@@ -1,6 +1,6 @@
 package Shotenjin::Embedder;
 BEGIN {
-  $Shotenjin::Embedder::VERSION = '0.01_03';
+  $Shotenjin::Embedder::VERSION = '0.01';
 } 
 
 # ABSTRACT: embedd and escape template content
@@ -52,23 +52,23 @@ sub process_string {
     pos $content = 0;
     
     while ($content =~ m!
-        ^(?'overall'
+        ^(
           
-            (?'directive'
+            (
             
-                (?'whitespace'[\t\f ]*) /\*tj  (?'template'.*?)  tj(?:file)?\*/  
+                ([\t\f ]*) /\*tj  (.*?)  tj(?:file)?\*/  
             )
             
             (?:\s+$GENERATED_QUOTED\s+sources\s:\s'.*?'\s*)?
         )$
     !msgx) {
         
-        my $overall             = $+{ overall };
+        my $overall             = $1;
         my $overall_quoted      = quotemeta $overall;
         
-        my $whitespace          = $+{ whitespace };
-        my $directive           = $+{ directive };
-        my $template            = $+{ template };
+        my $whitespace          = $3;
+        my $directive           = $2;
+        my $template            = $4;
         
         my $is_from_file        = $template =~ m/^file\(  (.+?)  \)$/mx;
         
@@ -105,7 +105,7 @@ Shotenjin::Embedder - embedd and escape template content
 
 =head1 VERSION
 
-version 0.01_03
+version 0.01
 
 =head1 AUTHOR
 

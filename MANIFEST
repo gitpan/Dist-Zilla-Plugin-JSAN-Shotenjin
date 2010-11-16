@@ -7,7 +7,7 @@ README
 dist.ini
 lib/Dist/Zilla/Plugin/JSAN/Shotenjin.pm
 lib/Shotenjin/Embedder.pm
-script/shotenjin_embed.pl
+script/shotenjin.pl
 t/000_load.t
 t/010_basic.t
 t/lib/Dist/Zilla/Stash/Heap.pm

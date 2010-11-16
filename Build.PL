@@ -17,20 +17,19 @@ my %module_build_args = (
     'Nickolay Platonov <nplatonov@cpan.org>'
   ],
   'dist_name' => 'Dist-Zilla-Plugin-JSAN-Shotenjin',
-  'dist_version' => '0.01_03',
+  'dist_version' => '0.01',
   'license' => 'perl',
   'module_name' => 'Dist::Zilla::Plugin::JSAN::Shotenjin',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
-    'Dist::Zilla' => '4.101900',
+    'Dist::Zilla' => '4.102343',
     'File::Find::Rule' => '0.28',
     'Getopt::LL' => '1.00',
-    'Moose' => '1.00',
     'Path::Class' => '0.16'
   },
   'script_files' => [
-    'script/shotenjin_embed.pl'
+    'script/shotenjin.pl'
   ]
 );
 
